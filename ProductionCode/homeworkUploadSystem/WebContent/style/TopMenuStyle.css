@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+
+
+body{
+	background-color: rgba(254,250,241,1);
+}
+#studentInf{
+	margin:15px 0px 0px 0px;
+}
+
+@media (min-height:56px) and (max-height:100px){
+	
+body{}
+.showtest{
+	font-size:large;
+}
+#studentInf{
+	margin:15px 0px 0px 0px;
+}
+}
+
+@media (min-height:49px) and (max-height:56px){
+	
+body{}
+.item{
+	font-size:8px;
+}
+.showtest{
+	font-size:medium;
+}
+#studentInf{
+	margin:10px 0px 0px 0px;
+}
+
+}
+
+@media (min-height:35px) and (max-height:50px){
+	
+body{}
+.item{
+	font-size:9px;
+}
+.showtest{
+	font-size:x-small;
+}
+#studentInf{
+	margin:5px 0px 0px 0px;
+}
+
+}
+
+@media (min-height:30px) and (max-height:35px){
+	
+body{}
+.item{
+	font-size:8px;
+}
+.showtest{
+	font-size:10px;
+}
+#studentInf{
+	margin:0px 0px 0px 0px;
+}
+
+}
+
+@media (min-height:1px) and (max-height:29px){
+	
+body{}
+.item{
+	font-size:7px;
+}
+#studentInf{
+	margin:0px 0px 0px 0px;
+}
+
+}

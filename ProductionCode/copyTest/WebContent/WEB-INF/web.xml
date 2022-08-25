@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <servlet>
+    <servlet-name>UpdateSetting</servlet-name>
+    <servlet-class>servlet.UpdateSetting</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateSetting</servlet-name>
+    <url-pattern>/UpdateSetting</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>UploadAndCheckResult</servlet-name>
+    <servlet-class>servlet.UploadAndCheckResult</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UploadAndCheckResult</servlet-name>
+    <url-pattern>/UploadAndCheckResult</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>HttpDetect</servlet-name>
+    <servlet-class>servlet.HttpDetect</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HttpDetect</servlet-name>
+    <url-pattern>/HttpDetect</url-pattern>
+  </servlet-mapping>
+</web-app>

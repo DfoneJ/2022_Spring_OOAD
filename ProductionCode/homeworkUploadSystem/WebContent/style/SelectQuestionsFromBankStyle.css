@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+body
+{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;	
+}
+.box
+{
+
+}
+.box:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -50%;
+	width: 100%;
+	height: 100%;
+	transform: skewX(-3deg);
+	pointer-events: none;
+}
+.box label
+{
+	position: relative;
+	cursor: pointer;
+}
+.box label input
+{
+	display: none;
+}
+.box label span
+{
+	position: relative;
+	display: inlin-block;
+	margin: 20px 10px;
+	width: 50px;
+	border: 1px solid #444;
+	color: #fff;
+	border-radius: 4px;
+}
+.box label input:checked ~ span
+{
+	color: #fff;
+	border: 1px solid #008eff"
+}
+.box label input:checked ~ span:before
+{
+	contect: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #008eff;
+	z-index: -1;
+	filter: blur(10px);
+}
+.box label input:checked ~ span:after
+{
+	contect: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #008eff;
+	z-index: -1;
+	filter: blur(15px);
+}
+.box label input:checked ~ span.already
+{
+	color: #008eff;
+	border-color: #006fff;
+	box-shadow: inset 0 0 10px #008eff, 0 0 15px #008eff;
+}
+
